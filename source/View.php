@@ -1,16 +1,19 @@
 <?php
 
+use League\Plates\Engine;
 
 class View
 {
     private $engine;
 
-    /**
-     * View constructor.
-     * @param string $path
-     */
-    public function __construct(string $path  = CONV_VIEW_PATH, string $ext = CONF_VIEW_EXT)
-    {
 
+    public function __construct(string $path, string $ext = CONF_VIEW_EXT)
+    {
+        $this->engine = Engine::create($path, $ext);
+    }
+
+    public function render(string $template, array $data): string
+    {
+        return $this->engine->render($template, $data);
     }
 }
