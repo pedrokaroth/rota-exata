@@ -1,0 +1,28 @@
+{
+  "name": "pedrokaroth/rota-exata",
+  "description": "Teste lógico ROTA-EXATA",
+  "minimum-stability": "stable",
+  "authors": [
+    {
+      "name": "Pedro Afonso Roth Dimbarre",
+      "email": "pedrokaroth@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "config": {
+    "vendor-dir": "vendor"
+  },
+  "autoload": {
+    "psr-4": {
+      "Source\\": "source/"
+    },
+    "files": [
+      "source/Boot/Config.php",
+      "source/Boot/Helpers.php"
+    ]
+  },
+  "require": {
+    "php": "^7.1",
+    "coffeecode/router": "^1.0"
+  }
+}
