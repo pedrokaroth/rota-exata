@@ -1,5 +1,9 @@
 <?php
 
+
+namespace Source\Core;
+
+
 use League\Plates\Engine;
 
 class View
@@ -7,7 +11,7 @@ class View
     private $engine;
 
 
-    public function __construct(string $path, string $ext = CONF_VIEW_EXT)
+    public function __construct(string $path, string $ext=CONF_VIEW_EXT)
     {
         $this->engine = Engine::create($path, $ext);
     }
