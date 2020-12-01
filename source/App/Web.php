@@ -15,6 +15,8 @@ class Web extends Controller
 
     public function home(?array $data): void
     {
-        echo "teste";
+        echo $this->view->render("home", [
+
+        ]);
     }
 }
