@@ -20,7 +20,12 @@
             <nav class="main_header_content_menu">
                 <ul>
                     <li><a href="<?= url("/") ?>">Lista de Produtos</a></li>
-                    <li><a href="<?= url("/login") ?>" class="action">Login</a></li>
+                    <?php if(!\Source\Model\Auth::user()): ?>
+                        <li><a href="<?= url("/login") ?>" class="action">Login</a></li>
+                    <?php else: ?>
+                        <li class="logout"><a>Sair</a></li>
+                        <li class="auth"> Autenticado </li>
+                    <?php endif ?>
                 </ul>
             </nav>
         </div>

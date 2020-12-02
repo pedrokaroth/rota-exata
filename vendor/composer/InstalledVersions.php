@@ -29,7 +29,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '799ea3613c592f83dc2f35082c95185fe5ab2620',
+    'reference' => '5eb8cc7654cd122e5748a1b479ed59f184497dc6',
     'name' => 'pedrokaroth/rota-exata',
   ),
   'versions' => 
@@ -59,7 +59,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '799ea3613c592f83dc2f35082c95185fe5ab2620',
+      'reference' => '5eb8cc7654cd122e5748a1b479ed59f184497dc6',
     ),
   ),
 );

@@ -7,18 +7,19 @@
             <h1>Login</h1>
         </header>
 
-        <form name="login"  method="post">
+        <form name="login" action="<?= url("/login") ?>" method="post">
             <label>
                 <span class="field icon-envelope">E-mail:</span>
-                <input name="email" type="email" placeholder="Informe seu e-mail" required/>
+                <input name="user" type="text" placeholder="Informe seu e-mail" required/>
             </label>
 
             <label>
                 <span class="field icon-unlock-alt">Senha:</span>
-                <input name="password" type="password" placeholder="Informe sua senha:" required/>
+                <input name="pass" type="password" placeholder="Informe sua senha:" required/>
             </label>
 
-            <button class="radius gradient gradient-green gradient-hover icon-sign-in">Entrar</button>
+            <button>Entrar</button>
         </form>
     </article>
 </div>
+
