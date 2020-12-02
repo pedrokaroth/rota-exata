@@ -11,6 +11,10 @@ $route->namespace("Source\App");
 $route->group(null);
 $route->get("/", "Web:home");
 
+/*Auth*/
+$route->get("/login", "Web:login");
+$route->post("/login", "Web:login");
+
 $route->dispatch();
 
 if ($route->error()) {

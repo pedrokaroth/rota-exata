@@ -19,4 +19,11 @@ class Web extends Controller
 
         ]);
     }
+
+    public function login(?array $data): void
+    {
+        echo $this->view->render("login", [
+
+        ]);
+    }
 }
