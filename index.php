@@ -16,6 +16,9 @@ $route->get("/login", "Web:login");
 $route->post("/login", "Web:login");
 $route->get("/logout", "Web:logout");
 
+/*Products*/
+$route->get("/produto", "Products:product");
+$route->post("/produto", "Products:product");
 
 $route->dispatch();
 

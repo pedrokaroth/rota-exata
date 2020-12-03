@@ -1,30 +1,41 @@
 <?php
 
-
 namespace Source\App;
-
-
-
 
 use Source\Core\Controller;
 use Source\Core\Session;
 use Source\Model\Auth;
 
 
+/**
+ * Class Web
+ * @author Pedro Dimbarre
+ * @package Source\App
+ */
 class Web extends Controller
 {
+    /**
+     * Web constructor.
+     */
     public function __construct()
     {
         parent::__construct(__DIR__ . "/../../themes/rotaexata");
     }
 
+    /**
+     * @param array|null $data
+     */
     public function home(?array $data): void
     {
+        $products = default_array();
         echo $this->view->render("home", [
-
+            "products" => $products
         ]);
     }
 
+    /**
+     * @param array|null $data
+     */
     public function login(?array $data): void
     {
         if(!empty($data)) {
@@ -54,7 +65,7 @@ class Web extends Controller
         ]);
     }
 
-    public function logout()
+    public function logout(): void
     {
         (new Session())->destroy();
         redirect("/");

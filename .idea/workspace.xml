@@ -20,12 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5d7d97c-8c20-4f98-981d-2d7874e34d66" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/source/App/Products.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/rotaexata/product.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/App/Web.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/App/Web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/Boot/Helpers.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Boot/Helpers.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/rotaexata/_theme.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/rotaexata/_theme.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/rotaexata/assets/css/boot.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/rotaexata/assets/css/boot.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/rotaexata/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/rotaexata/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/rotaexata/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/rotaexata/home.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +99,7 @@
       <workItem from="1606929159065" duration="1562000" />
       <workItem from="1606930812762" duration="3896000" />
       <workItem from="1606951293246" duration="13000" />
-      <workItem from="1607000956864" duration="996000" />
+      <workItem from="1607000956864" duration="10866000" />
     </task>
     <servers />
   </component>
@@ -123,6 +127,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="738" y="309" key="#com.intellij.fileTypes.FileTypeChooser/-1920.10.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606760061321" />
+    <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser" timestamp="1607002444600">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser/-1920.10.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607002444600" />
     <state x="723" y="430" width="474" height="281" key="ComposerInitDialogKey" timestamp="1606759536416">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -131,21 +139,21 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/-1920.10.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606916505906" />
-    <state x="767" y="226" key="NewPhpClassDialog" timestamp="1606931139272">
+    <state x="767" y="226" key="NewPhpClassDialog" timestamp="1607015151078">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="767" y="226" key="NewPhpClassDialog/-1920.10.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606931139272" />
-    <state x="794" y="439" key="NewPhpFileDialog" timestamp="1606910725361">
+    <state x="767" y="226" key="NewPhpClassDialog/-1920.10.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607015151078" />
+    <state x="794" y="439" key="NewPhpFileDialog" timestamp="1607015027839">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="794" y="439" key="NewPhpFileDialog/-1920.10.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606910725361" />
-    <state x="803" y="138" key="RollbackChangesDialog" timestamp="1606910470934">
+    <state x="794" y="439" key="NewPhpFileDialog/-1920.10.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607015027839" />
+    <state x="803" y="138" key="RollbackChangesDialog" timestamp="1607002289865">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="803" y="138" key="RollbackChangesDialog/-1920.10.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606910470934" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1606762548618">
+    <state x="803" y="138" key="RollbackChangesDialog/-1920.10.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607002289865" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1607005254370">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/-1920.10.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606762548618" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/-1920.10.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607005254370" />
   </component>
 </project>

@@ -23,7 +23,7 @@
                     <?php if(!\Source\Model\Auth::user()): ?>
                         <li><a href="<?= url("/login") ?>" class="action">Login</a></li>
                     <?php else: ?>
-                        <li><a href="#">Adicionar Produto</a></li>
+                        <li><a href="<?= url("/produto") ?>">Adicionar Produto</a></li>
                         <li class="logout"><a href="<?= url("/logout") ?>">Sair</a></li>
                         <li class="auth"> Autenticado </li>
                     <?php endif ?>
