@@ -14,6 +14,8 @@ $route->get("/", "Web:home");
 /*Auth*/
 $route->get("/login", "Web:login");
 $route->post("/login", "Web:login");
+$route->get("/logout", "Web:logout");
+
 
 $route->dispatch();
 

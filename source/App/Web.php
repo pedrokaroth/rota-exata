@@ -7,6 +7,7 @@ namespace Source\App;
 
 
 use Source\Core\Controller;
+use Source\Core\Session;
 use Source\Model\Auth;
 
 
@@ -51,5 +52,12 @@ class Web extends Controller
         echo $this->view->render("login", [
 
         ]);
+    }
+
+    public function logout()
+    {
+        (new Session())->destroy();
+        redirect("/");
+        return;
     }
 }
