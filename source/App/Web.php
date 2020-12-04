@@ -28,6 +28,11 @@ class Web extends Controller
     public function home(?array $data): void
     {
         $products = default_array();
+
+        if((new Session())->has("products")) {
+            $products = array_merge($products, (array)(new Session())->products);
+        }
+
         echo $this->view->render("home", [
             "products" => $products
         ]);

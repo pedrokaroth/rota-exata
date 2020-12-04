@@ -7,16 +7,18 @@
             <h1>Login</h1>
         </header>
 
-        <form name="login" action="<?= url("/login") ?>" method="post">
+        <form name="login" action="<?= url("/login") ?>" method="post" id="login">
             <label>
-                <span class="field icon-envelope">E-mail:</span>
+                <span class="field">E-mail:</span>
                 <input name="user" type="text" placeholder="Informe seu e-mail" required/>
             </label>
 
             <label>
-                <span class="field icon-unlock-alt">Senha:</span>
+                <span class="field">Senha:</span>
                 <input name="pass" type="password" placeholder="Informe sua senha:" required/>
             </label>
+
+            <input type="checkbox"> Manter conectado
 
             <button>Entrar</button>
         </form>

@@ -145,6 +145,7 @@
     cursor: pointer;
 
     width: 100%;
+    margin-top: 30px;
     padding: 10px;
 
     color: #FFF;
@@ -220,3 +221,94 @@
     border-spacing: 0 20px;
     margin-top: -20px;
 }
+
+/*FORM PRODUCTS*/
+
+.main_product {
+    display: flex;
+    left: 0;
+    right: 0;
+    margin-top: 5%;
+    padding: 30px 0;
+}
+
+.main_product .main_product_box {
+    border-radius: 10px;
+    width: 900px;
+    max-width: 90%;
+    margin: auto;
+    padding: 35px;
+    background: #ffffff;
+}
+
+.main_product header {
+    border-bottom: 2px solid #CCCCCC;
+    margin-bottom: 50px;
+}
+
+.main_product header p {
+    margin-bottom: 50px;
+}
+
+.main_product .main_product_header {
+    margin-top: 25px;
+    margin-left: 25px;
+    flex-basis: 100%;
+}
+
+.main_product .main_product_header h1 {
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+.main_product .main_product_form {
+    padding: 20px;
+}
+
+.main_product_form input[type="text"], input[type="number"], select {
+    width: 100%;
+    margin: 20px 0;
+
+    border: 2px solid #CCCCCC;
+    border-top: none;
+    border-right: none;
+    border-bottom-left-radius: 10px;
+
+    padding: 5px;
+}
+.main_product_form textarea {
+    width: 100%;
+    margin: 20px 0;
+    height: 150px;
+
+    border: 2px solid #CCCCCC;
+    border-top: none;
+    border-right: none;
+    border-bottom-left-radius: 10px;
+}
+
+.main_product .main_product_form .actions {
+    display: flex;
+    margin-top: 25px;
+}
+
+.main_product .main_product_form .actions button {
+    padding: 10px;
+    flex-basis: 50%;
+    border: none;
+    background-color: #48C774;
+}
+
+.main_product .main_product_form .actions button[type="submit"] {
+    border-bottom-left-radius: 10px;
+}
+
+.main_product .main_product_form .actions button:hover {
+    background-color: #D36833;
+    color: #FFFFFF;
+}
+
+.main_product .main_product_form input[type="text"], input[type="password"], textarea, select {
+    outline: none;
+}
+
