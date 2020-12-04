@@ -29,8 +29,18 @@ $("#products").submit(function (e) {
     if(validate("value")) {alert("Digite o Valor do Produto"); return }
     if(validate("desc")) {alert("Digite a descrição do Produto"); return }
 
-    return;
-    var form = $(this);
+    let c = confirm("Nome: " + value("name") +
+                  "\n\nValor: " + value("value") +
+                  "\n\nOpcionais:" + " \nOpcional " + value("opA")  + "\nOpcional " + document.querySelector('input[name="opB"]:checked').value+
+                  "\n\nDescrição: " + value("desc") + "\n\nAs informações enviadas estão corretas?")
+
+
+    if(!c) {
+        alert("Verifique e tente novamente!")
+        return;
+    }
+
+    let form = $(this);
 
     $.ajax({
         url: form.attr("action"),
@@ -57,4 +67,8 @@ function validate(id) {
 
     return val === "";
 
+}
+
+function value(id) {
+    return document.getElementById(id).value
 }

@@ -5,7 +5,6 @@ namespace Source\App;
 
 
 use Source\Core\Controller;
-use Source\Core\Session;
 use Source\Model\Auth;
 use Source\Model\Product;
 
@@ -25,7 +24,28 @@ class Products extends Controller
         if(!empty($data) && $data["action"] == "create") {
             $data = filter_var_array($data, FILTER_SANITIZE_STRIPPED);
 
-            (new Product())->create($data["name"], $data["value"], $data["desc"], [$data["opA"], $data["opB"]]);
+            if(empty($data["name"])) {
+                $json["message"] = "Digite o nome do produto";
+                echo json_encode($json);
+                return;
+            }
+
+            if(empty($data["value"])) {
+                $json["message"] = "Digite o valor do produto";
+                echo json_encode($json);
+                return;
+            }
+
+            if(empty($data["desc"])) {
+                $json["message"] = "Digite a descrição do produto";
+                echo json_encode($json);
+                return;
+            }
+
+            (new Product())->create($data["name"], $data["value"], $data["desc"], [
+                $data["opA"] ? "Opcional {$data["opA"]}" : null,
+                $data["opB"] ? "Opcional {$data["opA"]}" : null
+            ]);
 
             $json["message"] = "Produto {$data['name']} adicionado com sucesso!";
             $json["redirect"] = url("/");

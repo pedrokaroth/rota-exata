@@ -29,15 +29,15 @@
                     <span>Opcionais A:</span>
                     <select name="opA" id="opA">
                         <option value="1">Opcional 1</option>
-                        <option value="1">Opcional 2</option>
-                        <option value="1">Opcional 3</option>
+                        <option value="2">Opcional 2</option>
+                        <option value="3">Opcional 3</option>
                     </select>
                 </label>
 
                 <label class="radio">
                     <span>Opcionais B:</span><br>
                     <label>
-                        <br><input value="4" name="opB" type="radio"> Opcional 4
+                        <br><input value="4" name="opB" type="radio" checked> Opcional 4
                     </label>
                     <label>
                         <br><input value="5" name="opB" type="radio"> Opcional 5
