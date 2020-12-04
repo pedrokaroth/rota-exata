@@ -63,5 +63,9 @@ function default_array(): array
     $array[3]["produtos"]["opcionais"][] = "Opcional 2";
     $array[3]["produtos"]["opcionais"][] = "Opcional 3";
 
+    if ((new \Source\Core\Session())->has("products")) {
+        $array = array_merge($array, (array)(new \Source\Core\Session())->products);
+    }
+
     return $array;
 }

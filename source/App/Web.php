@@ -29,10 +29,6 @@ class Web extends Controller
     {
         $products = default_array();
 
-        if((new Session())->has("products")) {
-            $products = array_merge($products, (array)(new Session())->products);
-        }
-
         echo $this->view->render("home", [
             "products" => $products
         ]);
